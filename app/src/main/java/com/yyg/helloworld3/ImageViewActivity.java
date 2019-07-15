@@ -17,4 +17,4 @@ public class ImageViewActivity extends AppCompatActivity {
         Glide.with(this).load("https://www.baidu.com/img/bd_logo1.png?where=super").into(mIv4);
     }
 }
-//Git 测试
+//Git 需重新学习
