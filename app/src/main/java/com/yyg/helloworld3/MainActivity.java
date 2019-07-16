@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+
+import com.yyg.helloworld3.listview.ListViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_radiobutton).setOnClickListener(onClick);
         findViewById(R.id.btn_checkbox).setOnClickListener(onClick);
         findViewById(R.id.btn_imageview).setOnClickListener(onClick);
+        findViewById(R.id.btn_listview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -64,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
 //                    跳转到ImageView演示界面
                 case R.id.btn_imageview:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+//                    跳转到LidtView演示界面
+                case R.id.btn_listview:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);

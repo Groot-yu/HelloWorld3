@@ -16,6 +16,7 @@
         <activity android:name=".EditTextActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".TextViewActivity" />
+        <activity android:name=".listview.ListViewActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
