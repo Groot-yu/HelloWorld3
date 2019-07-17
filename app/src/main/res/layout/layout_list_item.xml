@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/iv"
         android:layout_width="100dp"
-        android:layout_height="170dp"
+        android:layout_height="150dp"
         android:background="#000"
         android:scaleType="fitXY" />
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:text="Hello"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/tv_time"
@@ -38,7 +38,7 @@
             android:id="@+id/tv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:text="这是内容"
             android:textColor="@color/colorGrayDark"
             android:textSize="20sp" />
