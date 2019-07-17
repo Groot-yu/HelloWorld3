@@ -56,8 +56,10 @@ public class MyListAdapter extends BaseAdapter {
 //          给vh赋值 连接vh convertView
             vh = (ViewHolder) convertView.getTag();
         }
-        Glide.with(mContext).load("https://www.baidu.com/img/emoji_58912914459c4f54cdc3d61bd6eac927.gif").into(vh.iv);
-        vh.tvtitle.setText("这是标题");
+        Glide.with(mContext).load("https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=30fe99efcecec3fd9f33af27b7e1bf5a/7a899e510fb30f24cb4b8820c595d143ad4b033b.jpg").into(vh.iv);
+//        Glide.with(mContext).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563387058265&di=2c2c069a53a05feb4067b6bd4c7a278f&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2FpopWaterMark%2Fg14%2FM07%2F17%2F1A%2FrBEhV1JrXO4IAAAAAAGSGuv1EaUAAEqAwBw-a0AAZIy171.jpg").into(vh.iv);
+
+        vh.tvtitle.setText("挪威的森林");
         vh.tvtime.setText("2019-07-17");
         vh.tvcontent.setText("《挪威的森林》是日本作家村上春树于1987年所著的一部长篇爱情小说。");
         return convertView;
