@@ -14,7 +14,7 @@ public class ImageViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_view);
         mIv4 = findViewById(R.id.iv_4);
-        Glide.with(this).load("http://img13.360buyimg.com/n1/jfs/t1165/315/531086589/76913/12412804/552f0f33N4b2a8a86.jpg").into(mIv4);
+        Glide.with(this).load("https://www.baidu.com/img/emoji_58912914459c4f54cdc3d61bd6eac927.gif").into(mIv4);
     }
 }
 //Git 需 重新学习

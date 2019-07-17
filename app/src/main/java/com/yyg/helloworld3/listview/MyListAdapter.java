@@ -56,7 +56,7 @@ public class MyListAdapter extends BaseAdapter {
 //          给vh赋值 连接vh convertView
             vh = (ViewHolder) convertView.getTag();
         }
-        Glide.with(mContext).load("http://img13.360buyimg.com/n1/jfs/t1165/315/531086589/76913/12412804/552f0f33N4b2a8a86.jpg").into(vh.iv);
+        Glide.with(mContext).load("https://www.baidu.com/img/emoji_58912914459c4f54cdc3d61bd6eac927.gif").into(vh.iv);
         vh.tvtitle.setText("这是标题");
         vh.tvtime.setText("2019-07-17");
         vh.tvcontent.setText("《挪威的森林》是日本作家村上春树于1987年所著的一部长篇爱情小说。");
