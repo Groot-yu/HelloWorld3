@@ -1,5 +1,6 @@
 package com.yyg.helloworld3.listview;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ public class ListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
         mLv1 = findViewById(R.id.lv_1);
-        mLv1.setAdapter(new MyListAdapter(this));
+        mLv1.setAdapter(new MyListAdapter(ListViewActivity.this));
         mLv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

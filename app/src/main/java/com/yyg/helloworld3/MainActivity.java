@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import com.yyg.helloworld3.listview.ListViewActivity;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_checkbox).setOnClickListener(onClick);
         findViewById(R.id.btn_imageview).setOnClickListener(onClick);
         findViewById(R.id.btn_listview).setOnClickListener(onClick);
+        findViewById(R.id.btn_gridview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -72,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
 //                    跳转到LidtView演示界面
                 case R.id.btn_listview:
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+//                    跳转到GridView演示界面
+                case R.id.btn_gridview:
+                    intent = new Intent(MainActivity.this, GridView.class);
                     break;
             }
             startActivity(intent);
