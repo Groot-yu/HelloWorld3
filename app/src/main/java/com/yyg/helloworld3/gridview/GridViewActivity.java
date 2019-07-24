@@ -16,6 +16,6 @@ public class GridViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_view);
         mGv = findViewById(R.id.gv);
-//        mGv.setAdapter(new );
+        mGv.setAdapter(new MyGridViewAdapter(GridViewActivity.this));
     }
 }

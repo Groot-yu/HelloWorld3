@@ -11,11 +11,11 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.yyg.helloworld3.R;
 
-public class MyListAdapter extends BaseAdapter {
+public class MyListViewAdapter extends BaseAdapter {
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    MyListAdapter(Context context) {
+    MyListViewAdapter(Context context) {
         this.mContext = context;
         this.mLayoutInflater = LayoutInflater.from(context);
     }
