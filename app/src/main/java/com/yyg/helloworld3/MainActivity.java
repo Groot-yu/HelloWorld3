@@ -9,10 +9,11 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListView;
 
+import com.yyg.helloworld3.gridview.GridViewActivity;
 import com.yyg.helloworld3.listview.ListViewActivity;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     //    private Button nBtnTextView, mBtnButton, mBtnEditText, mBtnRadioButton;
 //
 //    @Override
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 //                    跳转到GridView演示界面
                 case R.id.btn_gridview:
-                    intent = new Intent(MainActivity.this, GridView.class);
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
             }
             startActivity(intent);
