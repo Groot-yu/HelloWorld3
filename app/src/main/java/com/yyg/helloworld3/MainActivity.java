@@ -4,12 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.GridView;
-import android.widget.ListView;
 
+import com.yyg.helloworld3.gridview.GridViewActivity;
 import com.yyg.helloworld3.listview.ListViewActivity;
+import com.yyg.helloworld3.recyclerview.HorizontalRecyclerViewActivity;
+import com.yyg.helloworld3.recyclerview.LinearRecyclerViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_imageview).setOnClickListener(onClick);
         findViewById(R.id.btn_listview).setOnClickListener(onClick);
         findViewById(R.id.btn_gridview).setOnClickListener(onClick);
+        findViewById(R.id.btn_linearrecyclerview).setOnClickListener(onClick);
+        findViewById(R.id.btn_horizontalrecyclerview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -77,7 +78,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
 //                    跳转到GridView演示界面
                 case R.id.btn_gridview:
-                    intent = new Intent(MainActivity.this, GridView.class);
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+//                    跳转到LinearRecyclerView演示界面
+                case R.id.btn_linearrecyclerview:
+                    intent = new Intent(MainActivity.this, LinearRecyclerViewActivity.class);
+                    break;
+//                    跳转到HorizontalRecyclerView演示界面
+                case R.id.btn_horizontalrecyclerview:
+                    intent = new Intent(MainActivity.this, HorizontalRecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);

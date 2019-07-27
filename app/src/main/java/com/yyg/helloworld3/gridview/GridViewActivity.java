@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import com.yyg.helloworld3.R;
 
@@ -17,5 +20,18 @@ public class GridViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grid_view);
         mGv = findViewById(R.id.gv);
         mGv.setAdapter(new MyGridViewAdapter(GridViewActivity.this));
+        mGv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(GridViewActivity.this, "点击 postion" + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+        mGv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(GridViewActivity.this, "长按 position" + position, Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
     }
 }

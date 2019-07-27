@@ -53,8 +53,8 @@ public class MyGridViewAdapter extends BaseAdapter {
         } else {
             vh = (ViewHolder) convertView.getTag();
         }
-        Glide.with(mContext).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563387058265&di=2c2c069a53a05feb4067b6bd4c7a278f&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2FpopWaterMark%2Fg14%2FM07%2F17%2F1A%2FrBEhV1JrXO4IAAAAAAGSGuv1EaUAAEqAwBw-a0AAZIy171.jpg").into(vh.ivgrid);
-        vh.tvtitle.setText("挪威的森林");
+        Glide.with(mContext).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563985107481&di=dca2f940d5ff9ebf0992d086afab17b1&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201201%2F07%2F20120107154546_Cxzk8.thumb.700_0.jpg").into(vh.ivgrid);
+        vh.tvtitle.setText("花");
         return convertView;
     }
 

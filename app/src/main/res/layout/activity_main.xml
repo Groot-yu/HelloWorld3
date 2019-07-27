@@ -1,64 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_textview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAllCaps="false" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EditText"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_radiobutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EditText"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_checkbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_imageview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ImageView"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_listview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ListView"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_gridview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GridView"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView"
+            android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btn_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridView"
+            android:textAllCaps="false" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_linearrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LinearRecyclerView线性列表视图"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_horizontalrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HorizontalRecyclerView水平滚动视图"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_gridrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridRecyclerView水平滚动网格视图"
+            android:textAllCaps="false" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_testhorizontalscrollview1"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:text="测试HorizontalScrollView1"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_testhorizontalscrollview2"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:text="测试HorizontalScrollView2"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_testhorizontalscrollview3"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:text="测试HorizontalScrollView3"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_testscrollview1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:text="测试ScrollView1"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_testscrollview2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="测试ScrollView2"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_testscrollview3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="测试ScrollView3"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

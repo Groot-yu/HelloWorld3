@@ -3,6 +3,7 @@
     package="com.yyg.helloworld3">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".recyclerview.HorizontalRecyclerViewActivity"></activity>
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".EditTextActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".listview.ListViewActivity" />
-        <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
