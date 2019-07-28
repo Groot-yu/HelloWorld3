@@ -82,7 +82,7 @@
             android:id="@+id/btn_gridrecyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GridRecyclerView水平滚动网格视图"
+            android:text="GridRecyclerView网格视图"
             android:textAllCaps="false" />
 
         <HorizontalScrollView

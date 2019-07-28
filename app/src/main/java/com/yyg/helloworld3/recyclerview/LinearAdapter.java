@@ -6,15 +6,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.yyg.helloworld3.R;
 
 public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearViewHolder> {
     private Context mContext;
-    private LinearLayout ll;
     private OnItemClickListener mListener;
 
     public LinearAdapter(Context context, OnItemClickListener listener) {
@@ -26,12 +23,12 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     @Override
     public LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_recycler_item, viewGroup, false));
+        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_linear_recycler_item, viewGroup, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull LinearViewHolder holder, final int i) {
-        holder.textView.setText("HelloWorld!");
+        holder.textView.setText("Hello World!");
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,13 +38,13 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
         });
     }
 
-    public interface OnItemClickListener {
-        void Oncl(int position);
-    }
-
     @Override
     public int getItemCount() {
         return 88;
+    }
+
+    public interface OnItemClickListener {
+        void Oncl(int position);
     }
 
     class LinearViewHolder extends RecyclerView.ViewHolder {
