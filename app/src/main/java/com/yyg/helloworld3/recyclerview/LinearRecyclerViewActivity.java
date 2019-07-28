@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.yyg.helloworld3.R;
@@ -24,7 +23,7 @@ public class LinearRecyclerViewActivity extends AppCompatActivity {
         mRvLinear.setAdapter(new LinearAdapter(LinearRecyclerViewActivity.this, new LinearAdapter.OnItemClickListener() {
             @Override
             public void Oncl(int position) {
-                Toast.makeText(LinearRecyclerViewActivity.this, "click.." + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LinearRecyclerViewActivity.this, "click LinearRecyclerItem " + position, Toast.LENGTH_SHORT).show();
             }
         }));
         mRvLinear.addItemDecoration(new MyDecoration());

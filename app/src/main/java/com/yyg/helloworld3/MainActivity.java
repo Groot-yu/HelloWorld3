@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.yyg.helloworld3.gridview.GridViewActivity;
 import com.yyg.helloworld3.listview.ListViewActivity;
+import com.yyg.helloworld3.recyclerview.GridRecyclerViewActivity;
 import com.yyg.helloworld3.recyclerview.HorizontalRecyclerViewActivity;
 import com.yyg.helloworld3.recyclerview.LinearRecyclerViewActivity;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_gridview).setOnClickListener(onClick);
         findViewById(R.id.btn_linearrecyclerview).setOnClickListener(onClick);
         findViewById(R.id.btn_horizontalrecyclerview).setOnClickListener(onClick);
+        findViewById(R.id.btn_gridrecyclerview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -87,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
 //                    跳转到HorizontalRecyclerView演示界面
                 case R.id.btn_horizontalrecyclerview:
                     intent = new Intent(MainActivity.this, HorizontalRecyclerViewActivity.class);
+                    break;
+                case R.id.btn_gridrecyclerview:
+                    intent = new Intent(MainActivity.this, GridRecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
