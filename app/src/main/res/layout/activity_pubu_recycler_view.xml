@@ -7,6 +7,6 @@
         android:id="@+id/rv_pubu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorGray">
+        android:background="@color/colorBlack">
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

@@ -22,7 +22,7 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuAdapter.PubuViewHolder
     @NonNull
     @Override
     public PubuViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new PubuViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recycler_item, viewGroup, false));
+        return new PubuViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_pubu_recycler_item, viewGroup, false));
 
     }
 
