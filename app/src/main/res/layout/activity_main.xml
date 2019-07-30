@@ -85,6 +85,13 @@
             android:text="GridRecyclerView网格视图"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btn_puburecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PubuRecyclerView瀑布流视图"
+            android:textAllCaps="false" />
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">

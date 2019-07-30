@@ -22,7 +22,6 @@ public class HorAdapter extends RecyclerView.Adapter<HorAdapter.HorViewHolder> {
     @NonNull
     @Override
     public HorViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
         return new HorViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_horizontal_recycler_item, viewGroup, false));
     }
 

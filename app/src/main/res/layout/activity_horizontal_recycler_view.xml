@@ -7,5 +7,6 @@
         android:id="@+id/rv_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorGrayDark"></android.support.v7.widget.RecyclerView>
+        android:background="@color/colorGrayDark">
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

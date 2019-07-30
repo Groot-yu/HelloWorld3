@@ -6,28 +6,33 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ImageView;
+
 import com.yyg.helloworld3.R;
 
-public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder> {
+public class PubuAdapter extends RecyclerView.Adapter<PubuAdapter.PubuViewHolder> {
     private Context mContext;
     private OnItemClickListener mListener;
 
-    public GridAdapter(Context context, OnItemClickListener listener) {
+    public PubuAdapter(Context context, OnItemClickListener listener) {
         mContext = context;
         mListener = listener;
     }
 
     @NonNull
     @Override
-    public GridViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new GridViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recycler_item, viewGroup, false));
+    public PubuViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return new PubuViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recycler_item, viewGroup, false));
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GridViewHolder viewHolder, final int i) {
-        viewHolder.textView.setText("Hello Ocean!");
+    public void onBindViewHolder(@NonNull PubuViewHolder viewHolder, final int i) {
+        if (i % 2 == 0) {
+            viewHolder.imageView.setImageResource(R.drawable.pubu_image0);
+        } else {
+            viewHolder.imageView.setImageResource(R.drawable.pubu_image1);
+        }
         viewHolder.itemView.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -47,12 +52,12 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
         void Oncl(int position);
     }
 
-    class GridViewHolder extends RecyclerView.ViewHolder {
-        private TextView textView;
+    class PubuViewHolder extends RecyclerView.ViewHolder {
+        private ImageView imageView;
 
-        public GridViewHolder(@NonNull View itemView) {
+        public PubuViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.textView = itemView.findViewById(R.id.tv_grvitem);
+            this.imageView = itemView.findViewById(R.id.iv_pubuitem);
         }
     }
 }
