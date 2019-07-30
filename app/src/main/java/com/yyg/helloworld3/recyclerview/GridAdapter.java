@@ -52,7 +52,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
 
         public GridViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.textView = itemView.findViewById(R.id.tv_grvitem);
+            textView = itemView.findViewById(R.id.tv_grvitem);
         }
     }
 }

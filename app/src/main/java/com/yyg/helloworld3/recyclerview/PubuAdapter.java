@@ -29,9 +29,9 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuAdapter.PubuViewHolder
     @Override
     public void onBindViewHolder(@NonNull PubuViewHolder viewHolder, final int i) {
         if (i % 2 == 0) {
-            viewHolder.imageView.setImageResource(R.drawable.pubu_image0);
+            viewHolder.imageView.setImageResource(R.drawable.pubu_imageview0);
         } else {
-            viewHolder.imageView.setImageResource(R.drawable.pubu_image1);
+            viewHolder.imageView.setImageResource(R.drawable.pubu_imageview1);
         }
         viewHolder.itemView.setOnClickListener(
                 new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuAdapter.PubuViewHolder
 
         public PubuViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.imageView = itemView.findViewById(R.id.iv_pubuitem);
+            imageView = itemView.findViewById(R.id.iv_pubuitem);
         }
     }
 }
