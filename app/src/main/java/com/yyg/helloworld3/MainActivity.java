@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_horizontalrecyclerview).setOnClickListener(onClick);
         findViewById(R.id.btn_gridrecyclerview).setOnClickListener(onClick);
         findViewById(R.id.btn_puburecyclerview).setOnClickListener(onClick);
+        findViewById(R.id.btn_webview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -100,8 +101,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_puburecyclerview:
                     intent = new Intent(MainActivity.this, PubuRecyclerViewActivity.class);
                     break;
-            }
+//                    跳转到WebView演示界面
+                case R.id.btn_webview:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
 
+            }
             startActivity(intent);
         }
     }
