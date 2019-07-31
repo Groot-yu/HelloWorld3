@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".WebViewActivity" />
         <activity android:name=".recyclerview.PubuRecyclerViewActivity" />
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />
         <activity android:name=".recyclerview.HorizontalRecyclerViewActivity" />
@@ -24,13 +33,7 @@
         <activity android:name=".EditTextActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".UiActivity" />
     </application>
 
 </manifest>
