@@ -28,10 +28,25 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuAdapter.PubuViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull PubuViewHolder viewHolder, final int i) {
-        if (i % 2 == 0) {
-            viewHolder.imageView.setImageResource(R.drawable.pubu_imageview0);
-        } else {
-            viewHolder.imageView.setImageResource(R.drawable.pubu_imageview1);
+        switch (i % 6) {
+            case 0:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview0);
+                break;
+            case 1:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview1);
+                break;
+            case 2:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview2);
+                break;
+            case 3:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview3);
+                break;
+            case 4:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview4);
+                break;
+            case 5:
+                viewHolder.imageView.setImageResource(R.drawable.pubu_imageview5);
+                break;
         }
         viewHolder.itemView.setOnClickListener(
                 new View.OnClickListener() {
