@@ -10,6 +10,7 @@ import com.yyg.helloworld3.listview.ListViewActivity;
 import com.yyg.helloworld3.recyclerview.GridRecyclerViewActivity;
 import com.yyg.helloworld3.recyclerview.HorizontalRecyclerViewActivity;
 import com.yyg.helloworld3.recyclerview.LinearRecyclerViewActivity;
+import com.yyg.helloworld3.recyclerview.PubuRecyclerViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_linearrecyclerview).setOnClickListener(onClick);
         findViewById(R.id.btn_horizontalrecyclerview).setOnClickListener(onClick);
         findViewById(R.id.btn_gridrecyclerview).setOnClickListener(onClick);
+        findViewById(R.id.btn_puburecyclerview).setOnClickListener(onClick);
+        findViewById(R.id.btn_webview).setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -90,9 +93,19 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_horizontalrecyclerview:
                     intent = new Intent(MainActivity.this, HorizontalRecyclerViewActivity.class);
                     break;
+//                    跳转到GridRecyclerView演示界面
                 case R.id.btn_gridrecyclerview:
                     intent = new Intent(MainActivity.this, GridRecyclerViewActivity.class);
                     break;
+//                    跳转到PubuRecyclerView演示界面
+                case R.id.btn_puburecyclerview:
+                    intent = new Intent(MainActivity.this, PubuRecyclerViewActivity.class);
+                    break;
+//                    跳转到WebView演示界面
+                case R.id.btn_webview:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+
             }
             startActivity(intent);
         }

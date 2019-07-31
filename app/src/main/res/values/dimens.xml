@@ -1,3 +1,4 @@
 <resources>
     <dimen name="DividerHeight">2dp</dimen>
+    <dimen name="PubuDividerHeight">3dp</dimen>
 </resources>

@@ -22,7 +22,6 @@ public class HorAdapter extends RecyclerView.Adapter<HorAdapter.HorViewHolder> {
     @NonNull
     @Override
     public HorViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
         return new HorViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_horizontal_recycler_item, viewGroup, false));
     }
 
@@ -53,7 +52,7 @@ public class HorAdapter extends RecyclerView.Adapter<HorAdapter.HorViewHolder> {
 
         public HorViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.textView = itemView.findViewById(R.id.tv_hrvitem);
+            textView = itemView.findViewById(R.id.tv_hrvitem);
 
         }
     }
