@@ -50,6 +50,7 @@ public class UiActivity extends AppCompatActivity {
         findViewById(R.id.btn_toast).setOnClickListener(onClick);
         findViewById(R.id.btn_dialog).setOnClickListener(onClick);
         findViewById(R.id.btn_progress).setOnClickListener(onClick);
+        findViewById(R.id.btn_customdialog).setOnClickListener(onClick);
 
     }
 
@@ -121,7 +122,10 @@ public class UiActivity extends AppCompatActivity {
                 case R.id.btn_progress:
                     intent = new Intent(UiActivity.this, ProgressActivity.class);
                     break;
-
+//                    跳转到CustomDialog界面
+                case R.id.btn_customdialog:
+                    intent = new Intent(UiActivity.this, CustomDialogActivity.class);
+                    break;
 
             }
             startActivity(intent);
