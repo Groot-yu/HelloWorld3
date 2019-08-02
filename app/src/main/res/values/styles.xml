@@ -20,4 +20,12 @@
     <style name="MyProgressBar">
         <item name="android:indeterminateDrawable">@drawable/bg_pb5</item>
     </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
 </resources>

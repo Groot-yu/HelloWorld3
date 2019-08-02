@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_explicitjumpatob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显式跳转AtoB" />
+
+    <Button
+        android:id="@+id/btn_implicitjumpatob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐式跳转AtoB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等待返回" />
+</LinearLayout>

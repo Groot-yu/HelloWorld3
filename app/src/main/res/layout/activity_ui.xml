@@ -136,6 +136,38 @@
             android:textAllCaps="false"
             android:textSize="18sp" />
 
+        <Button
+            android:id="@+id/btn_customdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomDialog视图"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_popupwindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow视图"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_lifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LifeCycle视图"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_jumpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JumpA视图"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">

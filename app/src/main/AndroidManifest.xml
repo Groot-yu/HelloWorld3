@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProgressActivity"></activity>
+        <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".ProgressActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,9 +34,28 @@
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".EditTextActivity" />
-        <activity android:name=".ButtonActivity" />
+        <activity
+            android:name=".ButtonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".UiActivity" />
+        <activity
+            android:name=".UiActivity"
+            android:label="UI" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A" />
+
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B">
+            <intent-filter>
+                <!--action自定义 随便写 隐式跳转-->
+                <action android:name="implicitjump" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
