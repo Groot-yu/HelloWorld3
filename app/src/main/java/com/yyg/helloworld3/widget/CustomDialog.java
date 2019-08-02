@@ -2,10 +2,13 @@ package com.yyg.helloworld3.widget;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
+import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.yyg.helloworld3.DialogActivity;
@@ -30,6 +33,16 @@ public class CustomDialog extends Dialog implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_custom_dialog);
+
+
+        WindowManager windowManager = getWindow().getWindowManager();
+        WindowManager.LayoutParams lp = getWindow().getAttributes();
+        Display display = windowManager.getDefaultDisplay();
+        Point displaysize = new Point();
+        display.getSize(displaysize);
+        lp.width=(int)(displaysize.x*0.8);
+        getWindow().setAttributes(lp);
+
         mTvTitle = findViewById(R.id.tv_title);
         mTvMessage = findViewById(R.id.tv_message);
         mTvCancel = findViewById(R.id.tv_cancel);

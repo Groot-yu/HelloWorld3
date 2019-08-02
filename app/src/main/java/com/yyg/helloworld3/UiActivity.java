@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.yyg.helloworld3.gridview.GridViewActivity;
+import com.yyg.helloworld3.jump.AActivity;
 import com.yyg.helloworld3.listview.ListViewActivity;
 import com.yyg.helloworld3.recyclerview.GridRecyclerViewActivity;
 import com.yyg.helloworld3.recyclerview.HorizontalRecyclerViewActivity;
@@ -51,6 +52,9 @@ public class UiActivity extends AppCompatActivity {
         findViewById(R.id.btn_dialog).setOnClickListener(onClick);
         findViewById(R.id.btn_progress).setOnClickListener(onClick);
         findViewById(R.id.btn_customdialog).setOnClickListener(onClick);
+        findViewById(R.id.btn_popupwindow).setOnClickListener(onClick);
+        findViewById(R.id.btn_lifecycle).setOnClickListener(onClick);
+        findViewById(R.id.btn_jumpa).setOnClickListener(onClick);
 
     }
 
@@ -126,7 +130,18 @@ public class UiActivity extends AppCompatActivity {
                 case R.id.btn_customdialog:
                     intent = new Intent(UiActivity.this, CustomDialogActivity.class);
                     break;
-
+//                    跳转到PopupWindow界面
+                case R.id.btn_popupwindow:
+                    intent = new Intent(UiActivity.this, PopupWindowActivity.class);
+                    break;
+//                    跳转到LifeCycle界面
+                case R.id.btn_lifecycle:
+                    intent = new Intent(UiActivity.this, LifeCycleActivity.class);
+                    break;
+//                    跳转到JumpA界面
+                case R.id.btn_jumpa:
+                    intent = new Intent(UiActivity.this, AActivity.class);
+                    break;
             }
             startActivity(intent);
         }

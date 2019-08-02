@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.yyg.helloworld3.util.ToastUtil;
 import com.yyg.helloworld3.widget.CustomDialog;
 
 public class CustomDialogActivity extends AppCompatActivity {
@@ -18,7 +19,22 @@ public class CustomDialogActivity extends AppCompatActivity {
         mBtnCustomDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CustomDialog dialog = new CustomDialog(CustomDialogActivity.this);
+                CustomDialog dialog = new CustomDialog(CustomDialogActivity.this, R.style.CustomDialog);
+//                加了Style xml内background drawable才生效
+                dialog.setCancel("取消", new CustomDialog.IOnCancelListener() {
+                    @Override
+                    public void onCancel(CustomDialog dialog) {
+                        ToastUtil.showMsg(CustomDialogActivity.this, "已取消");
+                        dialog.dismiss();
+                    }
+                }).setConfirm("确认", new CustomDialog.IOnConfirmListener() {
+                    @Override
+                    public void onConfirm(CustomDialog dialog) {
+                        ToastUtil.showMsg(CustomDialogActivity.this, "已删除");
+                        dialog.dismiss();
+                    }
+                });
+//                dialog.
                 dialog.show();
             }
         });
