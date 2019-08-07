@@ -45,11 +45,13 @@
         <activity android:name=".LifeCycleActivity" />
         <activity
             android:name=".jump.AActivity"
-            android:label="A" />
+            android:label="A"
+            android:launchMode="singleTop" />
 
         <activity
             android:name=".jump.BActivity"
-            android:label="B">
+            android:label="B"
+            android:launchMode="singleTop">
             <intent-filter>
                 <!--action自定义 随便写 隐式跳转-->
                 <action android:name="implicitjump" />
