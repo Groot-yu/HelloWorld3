@@ -76,7 +76,7 @@
             android:id="@+id/btn_linearrecyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LinearRecyclerView线性列表视图"
+            android:text="LinearRecyclerView线性列表"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -84,7 +84,7 @@
             android:id="@+id/btn_horizontalrecyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HorizontalRecyclerView水平滚动视图"
+            android:text="HorizontalRecyclerView水平滚动"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -100,7 +100,7 @@
             android:id="@+id/btn_puburecyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PubuRecyclerView瀑布流视图"
+            android:text="PubuRecyclerView瀑布流"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -108,7 +108,7 @@
             android:id="@+id/btn_webview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WebView视图"
+            android:text="WebView"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -116,7 +116,7 @@
             android:id="@+id/btn_toast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Toast视图"
+            android:text="Toast"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -124,7 +124,7 @@
             android:id="@+id/btn_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AlertDialog视图"
+            android:text="AlertDialog"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -132,7 +132,7 @@
             android:id="@+id/btn_progress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Progress视图"
+            android:text="Progress"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -140,7 +140,7 @@
             android:id="@+id/btn_customdialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CustomDialog视图"
+            android:text="CustomDialog"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -148,7 +148,7 @@
             android:id="@+id/btn_popupwindow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PopupWindow视图"
+            android:text="PopupWindow"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -156,7 +156,7 @@
             android:id="@+id/btn_lifecycle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LifeCycle视图"
+            android:text="LifeCycle"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
@@ -164,7 +164,15 @@
             android:id="@+id/btn_jumpa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="JumpA视图"
+            android:text="JumpA"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
             android:textAllCaps="false"
             android:textSize="18sp" />
 

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.yyg.helloworld3.fragment.ContainerActivity;
 import com.yyg.helloworld3.gridview.GridViewActivity;
 import com.yyg.helloworld3.jump.AActivity;
 import com.yyg.helloworld3.listview.ListViewActivity;
@@ -55,6 +56,7 @@ public class UiActivity extends AppCompatActivity {
         findViewById(R.id.btn_popupwindow).setOnClickListener(onClick);
         findViewById(R.id.btn_lifecycle).setOnClickListener(onClick);
         findViewById(R.id.btn_jumpa).setOnClickListener(onClick);
+        findViewById(R.id.btn_fragment).setOnClickListener(onClick);
 
     }
 
@@ -126,22 +128,29 @@ public class UiActivity extends AppCompatActivity {
                 case R.id.btn_progress:
                     intent = new Intent(UiActivity.this, ProgressActivity.class);
                     break;
-//                    跳转到CustomDialog界面
+//                    跳转到CustomDialog演示界面
                 case R.id.btn_customdialog:
                     intent = new Intent(UiActivity.this, CustomDialogActivity.class);
                     break;
-//                    跳转到PopupWindow界面
+//                    跳转到PopupWindow演示界面
                 case R.id.btn_popupwindow:
                     intent = new Intent(UiActivity.this, PopupWindowActivity.class);
                     break;
-//                    跳转到LifeCycle界面
+//                    跳转到LifeCycle演示界面
                 case R.id.btn_lifecycle:
                     intent = new Intent(UiActivity.this, LifeCycleActivity.class);
                     break;
-//                    跳转到JumpA界面
+//                    跳转到JumpA演示界面
                 case R.id.btn_jumpa:
                     intent = new Intent(UiActivity.this, AActivity.class);
                     break;
+//                    跳转到Fragment演示界面
+                case R.id.btn_fragment:
+                    intent = new Intent(UiActivity.this, ContainerActivity.class);
+                    startActivity(intent);
+                    break;
+
+
             }
             startActivity(intent);
         }
