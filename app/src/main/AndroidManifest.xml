@@ -11,7 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".IntentActivity">
+            <intent-filter>
+                <action android:name="com.yyg.helloworld3.testIntent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yyg.helloworld3.myCategory" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".fragment.ContainerActivity" />
+        <activity android:name=".PopupWindowActivity" />
         <activity android:name=".CustomDialogActivity" />
         <activity android:name=".ProgressActivity" />
         <activity android:name=".MainActivity">
@@ -46,12 +58,11 @@
         <activity
             android:name=".jump.AActivity"
             android:label="A" />
-
         <activity
             android:name=".jump.BActivity"
             android:label="B">
             <intent-filter>
-                <!--action自定义 随便写 隐式跳转-->
+                <!-- action自定义 随便写 隐式跳转 -->
                 <action android:name="implicitjump" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

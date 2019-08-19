@@ -4,7 +4,11 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20sp" />
     <Button
         android:id="@+id/btn_explicitjumpatob"
         android:layout_width="wrap_content"
@@ -17,11 +21,13 @@
         android:layout_height="wrap_content"
         android:text="隐式跳转AtoB" />
 
-    <TextView
+    <Button
+        android:id="@+id/btn_jumpatoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A"
-        android:textSize="18sp" />
+        android:text="跳转AtoA" />
+
+
 
     <TextView
         android:id="@+id/tv_return"

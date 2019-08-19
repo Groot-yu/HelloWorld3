@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -22,8 +22,20 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="finish"
         android:id="@+id/btn_finish"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="finish" />
+
+    <Button
+        android:id="@+id/btn_jumpbtoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转BtoA" />
+
+    <Button
+        android:id="@+id/btn_jumpbtob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转BtoB" />
 </LinearLayout>

@@ -2,21 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_ui"
+    <TextView
+        android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI"
+        android:gravity="center"
+        android:text="我是Fragment B"
         android:textAllCaps="false"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/btn_event"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="事件机制"
-        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
         android:textSize="20sp" />
 </LinearLayout>
