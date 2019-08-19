@@ -28,8 +28,11 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
         switch (v.getId()) {
             case R.id.btn_sharedpreferences:
                 intent = new Intent(DataStorageActivity.this, SharedPerencesActivity.class);
-                startActivity(intent);
+                break;
+            case R.id.btn_file:
+                intent = new Intent(DataStorageActivity.this, FileActivity.class);
                 break;
         }
+        startActivity(intent);
     }
 }

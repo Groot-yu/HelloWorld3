@@ -32,13 +32,14 @@ public class FileActivity extends AppCompatActivity {
         mBtnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                save(mEtContent.getText().toString().trim());
+                //trim()去除前后空格
             }
         });
         mBtnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mTvData.setText(read());
             }
         });
 
@@ -67,7 +68,7 @@ public class FileActivity extends AppCompatActivity {
     }
 
     //读取数据
-    private String read(URL url) {
+    private String read() {
         FileInputStream fileInputStream = null;
         StringBuilder sb = null;
         try {
@@ -78,10 +79,19 @@ public class FileActivity extends AppCompatActivity {
             while ((len = fileInputStream.read(bytes)) > 0) {
                 sb.append(new String(bytes, 0, len));
             }
+            return sb.toString();
 //            String content= fileInputStream.read();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        return sb.toString();
+        return null;
     }
 }
