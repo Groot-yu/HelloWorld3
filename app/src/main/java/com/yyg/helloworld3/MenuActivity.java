@@ -12,7 +12,7 @@ import android.widget.Button;
 import com.yyg.helloworld3.util.ToastUtil;
 
 public class MenuActivity extends AppCompatActivity {
-    private Button mBtnfinish, mBtnyishi, mBtnwnagye;
+    private Button mBtnfinish, mBtnyishi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,6 @@ public class MenuActivity extends AppCompatActivity {
         mBtnfinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 finish();
             }
         });
@@ -30,19 +29,12 @@ public class MenuActivity extends AppCompatActivity {
         mBtnyishi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("com.yyg.helloworld3.testIntent");
-                intent.addCategory("com.yyg.helloworld3.myCategory");
+                Intent intent = new Intent("yinshi");
+                intent.addCategory("yinshi");
                 startActivity(intent);
             }
         });
-        mBtnwnagye = findViewById(R.id.btn_intent_yinshi);
-        mBtnwnagye.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent("com.yyg.helloworld3.testIntent", Uri.parse("http://www.baidu.com"));
-                startActivity(intent);
-            }
-        });
+
     }
 
     @Override

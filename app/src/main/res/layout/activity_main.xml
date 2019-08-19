@@ -19,4 +19,12 @@
         android:text="事件机制"
         android:textAllCaps="false"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据存储"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
 </LinearLayout>

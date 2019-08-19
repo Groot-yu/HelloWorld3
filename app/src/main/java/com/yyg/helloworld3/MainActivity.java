@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.yyg.helloworld3.datastorage.DataStorageActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Onclick onclick = new Onclick();
         findViewById(R.id.btn_ui).setOnClickListener(onclick);
         findViewById(R.id.btn_event).setOnClickListener(onclick);
-
+        findViewById(R.id.btn_data).setOnClickListener(onclick);
 
     }
 
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_event:
                     intent = new Intent(MainActivity.this, EventActivity.class);
+                    break;
+                case R.id.btn_data:
+                    intent = new Intent(MainActivity.this, DataStorageActivity.class);
                     break;
             }
             startActivity(intent);
