@@ -33,6 +33,14 @@
             android:textSize="18sp" />
 
         <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
             android:id="@+id/btn_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -7,8 +7,16 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="50dp"-->
     <!--android:text="切换为Fragment B" />-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!I am title."
+        android:textSize="20sp" />
+
     <FrameLayout
         android:id="@+id/fl_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title" />
 </RelativeLayout>

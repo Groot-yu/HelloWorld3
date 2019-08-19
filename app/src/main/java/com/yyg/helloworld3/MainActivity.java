@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private void setListener() {
         Onclick onclick = new Onclick();
         findViewById(R.id.btn_ui).setOnClickListener(onclick);
+        findViewById(R.id.btn_event).setOnClickListener(onclick);
+
+
     }
 
     class Onclick implements View.OnClickListener {
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.btn_ui:
                     intent = new Intent(MainActivity.this, UiActivity.class);
+                    break;
+                case R.id.btn_event:
+                    intent = new Intent(MainActivity.this, EventActivity.class);
                     break;
             }
             startActivity(intent);

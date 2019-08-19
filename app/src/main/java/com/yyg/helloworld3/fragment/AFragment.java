@@ -1,5 +1,6 @@
 package com.yyg.helloworld3.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,8 +16,9 @@ import com.yyg.helloworld3.R;
 
 public class AFragment extends Fragment {
     private TextView mTvTitle;
-    private Button mBtnChangeF, mBtnReset;
+    private Button mBtnChangeF, mBtnReset, mBtnMessage;
     private BFragment bFragment;
+    private IOnClick listener;
 
     public static AFragment newInstance(String title) {
         AFragment fragment = new AFragment();
@@ -67,5 +69,29 @@ public class AFragment extends Fragment {
                 mTvTitle.setText("设置新文字");
             }
         });
+        mBtnMessage = view.findViewById(R.id.btn_message);
+        mBtnMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onClick("你好！我是标题。");
+            }
+        });
     }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            listener = (IOnClick) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException("ContainerActivity必须实现IOnclick接口");
+        }
+
+    }
+
+    public interface IOnClick {
+        void onClick(String text);
+    }
+
+
 }

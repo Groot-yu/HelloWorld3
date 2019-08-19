@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finish()"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_intent_yinshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式Intent"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_intent_wangye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用外部浏览器打开网页"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

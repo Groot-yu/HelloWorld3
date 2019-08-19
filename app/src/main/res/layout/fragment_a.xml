@@ -17,6 +17,13 @@
         android:layout_height="50dp"
         android:text="切换TextView文字内容" />
 
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="切换ContainerActivity中TextView文字内容"
+        android:textAllCaps="false" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"

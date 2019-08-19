@@ -39,6 +39,7 @@ public class UiActivity extends AppCompatActivity {
         findViewById(R.id.btn_textview).setOnClickListener(onClick);
         findViewById(R.id.btn_button).setOnClickListener(onClick);
         findViewById(R.id.btn_edittext).setOnClickListener(onClick);
+        findViewById(R.id.btn_menu).setOnClickListener(onClick);
         findViewById(R.id.btn_radiobutton).setOnClickListener(onClick);
         findViewById(R.id.btn_checkbox).setOnClickListener(onClick);
         findViewById(R.id.btn_imageview).setOnClickListener(onClick);
@@ -76,6 +77,10 @@ public class UiActivity extends AppCompatActivity {
                 case R.id.btn_edittext:
 //                    跳转到EditText界面
                     intent = new Intent(UiActivity.this, EditTextActivity.class);
+                    break;
+//                    跳转到Menu界面
+                case R.id.btn_menu:
+                    intent=new Intent(UiActivity.this,MenuActivity.class);
                     break;
                 case R.id.btn_radiobutton:
 //                    跳转到RadioButton界面
