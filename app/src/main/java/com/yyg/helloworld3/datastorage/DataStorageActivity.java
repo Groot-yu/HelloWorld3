@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.yyg.helloworld3.R;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button mBtnFile, mBtnSharedPreferences;
+    private Button mBtnFile, mBtnSharedPreferences, mBtnExternalStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +17,10 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_data_storage);
         mBtnFile = findViewById(R.id.btn_file);
         mBtnSharedPreferences = findViewById(R.id.btn_sharedpreferences);
+        mBtnExternalStorage = findViewById(R.id.btn_externalstorage);
         mBtnSharedPreferences.setOnClickListener(this);
         mBtnFile.setOnClickListener(this);
+        mBtnExternalStorage.setOnClickListener(this);
 
     }
 
@@ -31,6 +33,9 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_file:
                 intent = new Intent(DataStorageActivity.this, FileActivity.class);
+                break;
+            case R.id.btn_externalstorage:
+                intent = new Intent(DataStorageActivity.this, ExternalStorageActivity.class);
                 break;
         }
         startActivity(intent);

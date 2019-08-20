@@ -18,5 +18,12 @@
         android:text="File"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_externalstorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ExternalStorage"
+        android:textAllCaps="false" />
+
 
 </LinearLayout>

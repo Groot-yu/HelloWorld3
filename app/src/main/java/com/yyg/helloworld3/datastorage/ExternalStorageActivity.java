@@ -1,5 +1,6 @@
 package com.yyg.helloworld3.datastorage;
 
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,15 +10,12 @@ import android.widget.TextView;
 
 import com.yyg.helloworld3.R;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
-public class FileActivity extends AppCompatActivity {
+public class ExternalStorageActivity extends AppCompatActivity {
     private EditText mEtContent;
     private Button mBtnSave, mBtnShow;
     private TextView mTvData;
@@ -26,7 +24,7 @@ public class FileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_file);
+        setContentView(R.layout.activity_external_storage);
         mEtContent = findViewById(R.id.et_content);
         mBtnSave = findViewById(R.id.btn_save);
         mBtnShow = findViewById(R.id.btn_show);
@@ -51,7 +49,16 @@ public class FileActivity extends AppCompatActivity {
     private void save(String content) {
         FileOutputStream out = null;
         try {
-            out = openFileOutput(mFileName, MODE_PRIVATE);
+            File dir = new File(Environment.getExternalStorageDirectory(), "yyg");
+            if (!dir.exists()) {
+                dir.mkdirs();
+            }
+
+            File file = new File(dir, mFileName);
+            if (file.exists()) {
+                file.createNewFile();
+            }
+            out = new FileOutputStream(file);
             out.write(content.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
@@ -67,38 +74,17 @@ public class FileActivity extends AppCompatActivity {
         }
     }
 
-    //使用OutoutStreamWriter  不会去空格  尽量使用接近底层数据如getbyte()和new String(bytes, 0, len)的方法
-//    private void save(String content) {
-//        FileOutputStream out = null;
-//        BufferedWriter writer = null;
-//        try {
-//            out = openFileOutput(mFileName, MODE_PRIVATE);
-//            writer = new BufferedWriter(new OutputStreamWriter(out));
-//            writer.write(content);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } finally {
-//            if (writer != null) {
-//                try {
-//                    writer.flush();
-//                    writer.close();
-//                    out.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    }
-
-    //读取数据
     private String read() {
         FileInputStream in = null;
-        StringBuilder content = null;
+        StringBuilder content = new StringBuilder();
         try {
-            in = openFileInput(mFileName);
+           File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+File.separator+"yyg",mFileName);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            in = new FileInputStream(file);
             byte[] bytes = new byte[1024];
-            content = new StringBuilder();
-            int len = 0;
+            int len;
             while ((len = in.read(bytes)) > 0) {
                 content.append(new String(bytes, 0, len));
             }
@@ -116,32 +102,5 @@ public class FileActivity extends AppCompatActivity {
         }
         return null;
     }
-
-        //会去除空格 弃用
-//    private String read() {
-//        FileInputStream in = null;
-//        BufferedReader reader = null;
-//        StringBuilder content = null;
-//        try {
-//            in = openFileInput(mFileName);
-//            reader = new BufferedReader(new InputStreamReader(in));
-//            content = new StringBuilder();
-//            String line = "";
-//            while ((line = reader.readLine()) != null) {
-//                content.append(line);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } finally {
-//            if (reader != null) {
-//                try {
-//                    reader.close();
-//                    in.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//        return content.toString();
-//    }
 }
+
