@@ -34,7 +34,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 //        mBtnEvent.setOnClickListener(this);
 //        mBtnEvent.setOnClickListener(EventActivity.this);
         //4 通过外部类去实现
-//        mBtnEvent.setOnClickListener(new MyClickListener(EventActivity.this));
+        mBtnEvent.setOnClickListener(new MyClickListener(EventActivity.this));
 
         btnMy = findViewById(R.id.btn_my);
         //监听优先级高于回调函数  View源码OnTouchListener在onTouchEvent前面

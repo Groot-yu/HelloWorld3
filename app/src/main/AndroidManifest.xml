@@ -3,6 +3,7 @@
     package="com.yyg.helloworld3">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".datastorage.ExternalStorageActivity"></activity>
+        <activity android:name=".datastorage.FileActivity" />
+        <activity android:name=".datastorage.SharedPerencesActivity" />
+        <activity android:name=".datastorage.DataStorageActivity" />
         <activity android:name=".IntentActivity">
             <intent-filter>
-                <action android:name="com.yyg.helloworld3.testIntent" />
+                <action android:name="yinshi" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.yyg.helloworld3.myCategory" />
+                <category android:name="yinshi" />
             </intent-filter>
         </activity>
         <activity android:name=".MenuActivity" />
@@ -62,8 +67,10 @@
             android:name=".jump.BActivity"
             android:label="B">
             <intent-filter>
+
                 <!-- action自定义 随便写 隐式跳转 -->
                 <action android:name="implicitjump" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
