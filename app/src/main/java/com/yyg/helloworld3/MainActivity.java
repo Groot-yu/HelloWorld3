@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setListener();
+        setListener();setListener();
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
     }
 
@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class Onclick implements View.OnClickListener {
+
+
+        //asdfasdfasasdfasdfasdf
         @Override
         public void onClick(View v) {
             Intent intent = null;
