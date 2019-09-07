@@ -6,6 +6,10 @@
           <option name="url" value="https://github.com/Groot-yu/HelloWorld3" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://git.smstudio.cc" />
+          <option name="userName" value="YUYG" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\works_of_art" />
