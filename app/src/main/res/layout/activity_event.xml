@@ -20,7 +20,7 @@
         android:text="show event"
         android:textAllCaps="false" />
 
-    <com.yyg.helloworld3.widget.MyButton
+    <com.yyg.tiange.widget.MyButton
         android:id="@+id/btn_my"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

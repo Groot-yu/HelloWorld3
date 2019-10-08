@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yyg.helloworld3">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="com.yyg.tiange">
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".datastorage.ExternalStorageActivity"></activity>
-        <activity android:name=".datastorage.FileActivity" />
-        <activity android:name=".datastorage.SharedPerencesActivity" />
-        <activity android:name=".datastorage.DataStorageActivity" />
-        <activity android:name=".IntentActivity">
+        <activity android:name="com.yyg.tiange.datastorage.ExternalStorageActivity"></activity>
+        <activity android:name="com.yyg.tiange.datastorage.FileActivity" />
+        <activity android:name="com.yyg.tiange.datastorage.SharedPerencesActivity" />
+        <activity android:name="com.yyg.tiange.datastorage.DataStorageActivity" />
+        <activity android:name="com.yyg.tiange.IntentActivity">
             <intent-filter>
                 <action android:name="yinshi" />
 
@@ -24,47 +22,47 @@
                 <category android:name="yinshi" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".HandlerActivity" />
-        <activity android:name=".EventActivity" />
-        <activity android:name=".fragment.ContainerActivity" />
-        <activity android:name=".PopupWindowActivity" />
-        <activity android:name=".CustomDialogActivity" />
-        <activity android:name=".ProgressActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.yyg.tiange.MenuActivity" />
+        <activity android:name="com.yyg.tiange.HandlerActivity" />
+        <activity android:name="com.yyg.tiange.EventActivity" />
+        <activity android:name="com.yyg.tiange.fragment.ContainerActivity" />
+        <activity android:name="com.yyg.tiange.PopupWindowActivity" />
+        <activity android:name="com.yyg.tiange.CustomDialogActivity" />
+        <activity android:name="com.yyg.tiange.ProgressActivity" />
+        <activity android:name="com.yyg.tiange.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DialogActivity" />
-        <activity android:name=".ToastActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".recyclerview.PubuRecyclerViewActivity" />
-        <activity android:name=".recyclerview.GridRecyclerViewActivity" />
-        <activity android:name=".recyclerview.HorizontalRecyclerViewActivity" />
-        <activity android:name=".listview.ListViewActivity" />
-        <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
-        <activity android:name=".ImageViewActivity" />
-        <activity android:name=".CheckBoxActivity" />
-        <activity android:name=".RadioButtonActivity" />
-        <activity android:name=".EditTextActivity" />
+        <activity android:name="com.yyg.tiange.DialogActivity" />
+        <activity android:name="com.yyg.tiange.ToastActivity" />
+        <activity android:name="com.yyg.tiange.WebViewActivity" />
+        <activity android:name="com.yyg.tiange.recyclerview.PubuRecyclerViewActivity" />
+        <activity android:name="com.yyg.tiange.recyclerview.GridRecyclerViewActivity" />
+        <activity android:name="com.yyg.tiange.recyclerview.HorizontalRecyclerViewActivity" />
+        <activity android:name="com.yyg.tiange.listview.ListViewActivity" />
+        <activity android:name="com.yyg.tiange.gridview.GridViewActivity" />
+        <activity android:name="com.yyg.tiange.recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name="com.yyg.tiange.ImageViewActivity" />
+        <activity android:name="com.yyg.tiange.CheckBoxActivity" />
+        <activity android:name="com.yyg.tiange.RadioButtonActivity" />
+        <activity android:name="com.yyg.tiange.EditTextActivity" />
         <activity
-            android:name=".ButtonActivity"
+            android:name="com.yyg.tiange.ButtonActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TextViewActivity" />
+        <activity android:name="com.yyg.tiange.TextViewActivity" />
         <activity
-            android:name=".UiActivity"
+            android:name="com.yyg.tiange.UiActivity"
             android:label="UI" />
-        <activity android:name=".LifeCycleActivity" />
+        <activity android:name="com.yyg.tiange.LifeCycleActivity" />
         <activity
-            android:name=".jump.AActivity"
+            android:name="com.yyg.tiange.jump.AActivity"
             android:label="A" />
         <activity
-            android:name=".jump.BActivity"
+            android:name="com.yyg.tiange.jump.BActivity"
             android:label="B">
             <intent-filter>
 
@@ -75,5 +73,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
