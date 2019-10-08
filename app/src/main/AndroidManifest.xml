@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yyg.tiange">
+    package="com.yyg.genge">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.yyg.tiange.datastorage.ExternalStorageActivity"></activity>
-        <activity android:name="com.yyg.tiange.datastorage.FileActivity" />
-        <activity android:name="com.yyg.tiange.datastorage.SharedPerencesActivity" />
-        <activity android:name="com.yyg.tiange.datastorage.DataStorageActivity" />
-        <activity android:name="com.yyg.tiange.IntentActivity">
+        <activity android:name="com.yyg.genge.datastorage.ExternalStorageActivity"></activity>
+        <activity android:name="com.yyg.genge.datastorage.FileActivity" />
+        <activity android:name="com.yyg.genge.datastorage.SharedPerencesActivity" />
+        <activity android:name="com.yyg.genge.datastorage.DataStorageActivity" />
+        <activity android:name="com.yyg.genge.IntentActivity">
             <intent-filter>
                 <action android:name="yinshi" />
 
@@ -22,47 +22,47 @@
                 <category android:name="yinshi" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yyg.tiange.MenuActivity" />
-        <activity android:name="com.yyg.tiange.HandlerActivity" />
-        <activity android:name="com.yyg.tiange.EventActivity" />
-        <activity android:name="com.yyg.tiange.fragment.ContainerActivity" />
-        <activity android:name="com.yyg.tiange.PopupWindowActivity" />
-        <activity android:name="com.yyg.tiange.CustomDialogActivity" />
-        <activity android:name="com.yyg.tiange.ProgressActivity" />
-        <activity android:name="com.yyg.tiange.MainActivity">
+        <activity android:name="com.yyg.genge.MenuActivity" />
+        <activity android:name="com.yyg.genge.HandlerActivity" />
+        <activity android:name="com.yyg.genge.EventActivity" />
+        <activity android:name="com.yyg.genge.fragment.ContainerActivity" />
+        <activity android:name="com.yyg.genge.PopupWindowActivity" />
+        <activity android:name="com.yyg.genge.CustomDialogActivity" />
+        <activity android:name="com.yyg.genge.ProgressActivity" />
+        <activity android:name="com.yyg.genge.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yyg.tiange.DialogActivity" />
-        <activity android:name="com.yyg.tiange.ToastActivity" />
-        <activity android:name="com.yyg.tiange.WebViewActivity" />
-        <activity android:name="com.yyg.tiange.recyclerview.PubuRecyclerViewActivity" />
-        <activity android:name="com.yyg.tiange.recyclerview.GridRecyclerViewActivity" />
-        <activity android:name="com.yyg.tiange.recyclerview.HorizontalRecyclerViewActivity" />
-        <activity android:name="com.yyg.tiange.listview.ListViewActivity" />
-        <activity android:name="com.yyg.tiange.gridview.GridViewActivity" />
-        <activity android:name="com.yyg.tiange.recyclerview.LinearRecyclerViewActivity" />
-        <activity android:name="com.yyg.tiange.ImageViewActivity" />
-        <activity android:name="com.yyg.tiange.CheckBoxActivity" />
-        <activity android:name="com.yyg.tiange.RadioButtonActivity" />
-        <activity android:name="com.yyg.tiange.EditTextActivity" />
+        <activity android:name="com.yyg.genge.DialogActivity" />
+        <activity android:name="com.yyg.genge.ToastActivity" />
+        <activity android:name="com.yyg.genge.WebViewActivity" />
+        <activity android:name="com.yyg.genge.recyclerview.PubuRecyclerViewActivity" />
+        <activity android:name="com.yyg.genge.recyclerview.GridRecyclerViewActivity" />
+        <activity android:name="com.yyg.genge.recyclerview.HorizontalRecyclerViewActivity" />
+        <activity android:name="com.yyg.genge.listview.ListViewActivity" />
+        <activity android:name="com.yyg.genge.gridview.GridViewActivity" />
+        <activity android:name="com.yyg.genge.recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name="com.yyg.genge.ImageViewActivity" />
+        <activity android:name="com.yyg.genge.CheckBoxActivity" />
+        <activity android:name="com.yyg.genge.RadioButtonActivity" />
+        <activity android:name="com.yyg.genge.EditTextActivity" />
         <activity
-            android:name="com.yyg.tiange.ButtonActivity"
+            android:name="com.yyg.genge.ButtonActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.yyg.tiange.TextViewActivity" />
+        <activity android:name="com.yyg.genge.TextViewActivity" />
         <activity
-            android:name="com.yyg.tiange.UiActivity"
+            android:name="com.yyg.genge.UiActivity"
             android:label="UI" />
-        <activity android:name="com.yyg.tiange.LifeCycleActivity" />
+        <activity android:name="com.yyg.genge.LifeCycleActivity" />
         <activity
-            android:name="com.yyg.tiange.jump.AActivity"
+            android:name="com.yyg.genge.jump.AActivity"
             android:label="A" />
         <activity
-            android:name="com.yyg.tiange.jump.BActivity"
+            android:name="com.yyg.genge.jump.BActivity"
             android:label="B">
             <intent-filter>
 
