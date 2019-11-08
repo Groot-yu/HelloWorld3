@@ -44,7 +44,6 @@ public class LinearAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 mListener.Oncl(position);
             }
         });
-
     }
 
     //    @Override
