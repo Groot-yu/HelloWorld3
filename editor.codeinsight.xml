@@ -1,6 +1,0 @@
-<application>
-  <component name="CodeInsightSettings">
-    <option name="COMPLETION_CASE_SENSITIVE" value="2" />
-    <EXCLUDED_PACKAGE NAME="android.widget.AdapterView.OnItemLongClickListener" />
-  </component>
-</application>
